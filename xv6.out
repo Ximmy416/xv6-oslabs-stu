@@ -1,0 +1,19 @@
+
+xv6 kernel is booting
+
+init: starting sh
+$ yieldtest
+yield test
+parent yield
+Save the context of the process to the memory region from address 0x00000000800122c8 to 0x0000000080012338
+Current running process pid is 3 and user pc is 0x00000000000003e2
+Next runnable process pid is 4 and user pc is 0x0000000000000332
+Child with PID 4 begins to run
+proc 4 exit, parent pid 3, name yieldtest, state runble
+Child with PID 5 begins to run
+proc 5 exit, parent pid 3, name yieldtest, state runble
+Child with PID 6 begins to run
+proc 6 exit, parent pid 3, name yieldtest, state runble
+parent yield finished
+proc 3 exit, parent pid 2, name sh, state sleep
+$ qemu-system-riscv64: terminating on signal 15 from pid 38246 (make)
